@@ -14,6 +14,8 @@ public class PlayerManager {
 		
 		//Display number of names in the array
 		System.out.println(availablePlayers.length);
+		
+		System.out.println(DefensivePlayer.class);
 	}
 	//A method that counts the number of names in the array
 	public static void createPlayer(String[] availablePlayers) {

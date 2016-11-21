@@ -1,6 +1,6 @@
 package finalProject;
 
-public class NFLPLayers {
+public class NFLPlayers {
 
 	//name of player
 	String name;
@@ -63,35 +63,40 @@ public class NFLPLayers {
 	}
 	
 	//setters for properties
-	public void setName(String newName){
-		name = newName;
+	public void setName(String name){
+		this.name = name;
 	}
-	public void setPosition(String newPosition){
-		position = newPosition;
+	public void setPosition(String position){
+		this.position = position;
 	}
-	public void setHighschool(String newHighschool){
-		highschool = newHighschool;
+	public void setHighschool(String highschool){
+		this.highschool = highschool;
 	}
-	public void setCollege(String newCollege){
-		college = newCollege;
+	public void setCollege(String college){
+		this.college = college;
 	}
-	public void setAge(int newAge){
-		age = newAge;
+	public void setAge(int age){
+		this.age = age;
 	}
-	public void setHeight(int newHeight){
-		height = newHeight;
+	public void setHeight(int height){
+		this.height = height;
 	}
-	public void setWeight(double newWeight){
-		weight = newWeight;
+	public void setWeight(double weight){
+		this.weight = weight;
 	}
-	public void setGrade(double newGrade){
-		grade = newGrade;
+	public void setGrade(double grade){
+		this.grade = grade;
 	}
-	public void setRound(int newRound){
-		round = newRound;
+	public void setRound(int round){
+		this.round = round;
 	}
-	public void setAverageFortyYardDash(double newAverageFortyYardDash){
-		averageFortyYardDash = newAverageFortyYardDash;
+	public void setAverageFortyYardDash(double averageFortyYardDash){
+		this.averageFortyYardDash = averageFortyYardDash;
+	}
+	public String toString(){
+		return "Name: " + name + "\t" + position + "\nHighschool: " + highschool + "\n College: " + college +
+				"\nAge: " + age + "\nHeight: " + height + "\tWeight: " + weight + "\nGrade: " + grade +
+				"\tRound: " + round + "\nAverage Forty Yard Dash: " + averageFortyYardDash;
 	}
 }
 	

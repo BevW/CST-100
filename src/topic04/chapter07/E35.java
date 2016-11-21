@@ -7,7 +7,7 @@ public class E35 {
 		
 		//array of words
 		String[] words = {"bob"};
-				
+		
 		//select a random index/word form words array
 		String randomWord = words[(int) (Math.random() * words.length)];
 		
@@ -38,17 +38,18 @@ public class E35 {
 			for (int i = 0; i < randomWordCharArr.length; i++){
 				if (guessedLetter == randomWordCharArr[i])
 					hiddenWord.setCharAt(i, guessedLetter);
-			if (!isAlreadyInWord (hiddenWord, guessedLetter))	
-				if (guessedLetter != randomWordCharArr[1]){
-					System.out.println(guessedLetter + " is not in the word.");
-					wrongGuess++;
-				}
+				if (!isAlreadyInWord (hiddenWord, guessedLetter))	
+					if (guessedLetter != randomWordCharArr[1]){
+						System.out.println(guessedLetter + " is not in the word.");
+						wrongGuess++;
+					}
 			}
 		}
 		System.out.println("The word is " + randomWord + ". You missed " + wrongGuess + " time.");
 	}
 	}
-	public static boolean isAlreadyInWord (StringBuilder hiddenWord, char ch){
+	
+	public static boolean isAlreadyInWord (StringBuilder hiddenWord, char guessedLetter){
 		for (int i = 0; i < hiddenWord.charAt(i); i++){
 			if (guessedLetter == hiddenWord.charAt(i))
 				return true;
