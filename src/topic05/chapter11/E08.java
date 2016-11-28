@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class E08 {
 

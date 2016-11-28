@@ -1,8 +1,8 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class Faculty extends Employee{
 
-	private int officeHours;
+	private String officeHours;
 	private int rank;
 	
 	// No args constructor
@@ -10,19 +10,20 @@ public class Faculty extends Employee{
 	}
 	// Constructor
 	public Faculty(String name, String address, String phoneNumber, String emailAddress,
-			int officeHours, int rank){
+			int office, int dateHired, double salary, String officeHours, int rank){
+		super(name, address, phoneNumber, emailAddress, office, dateHired, salary);
 		this.officeHours = officeHours;
 		this.rank = rank;
 	}
 	// Getters for office hours and rank
-	public int getOfficeHours(){
+	public String getOfficeHours(){
 		return officeHours;
 	}
 	public int getRank(){
 		return rank;
 	}
 	// Setters for office hours and rank
-	public void setOfficeHours(int officeHours){
+	public void setOfficeHours(String officeHours){
 		this.officeHours = officeHours;
 	}
 	public void setRank(int rank){

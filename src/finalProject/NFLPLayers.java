@@ -1,6 +1,6 @@
 package finalProject;
 
-public class NFLPlayers {
+public class NFLPlayers implements Celebrator {
 
 	//name of player
 	String name;
@@ -98,6 +98,17 @@ public class NFLPlayers {
 				"\nAge: " + age + "\nHeight: " + height + "\tWeight: " + weight + "\nGrade: " + grade +
 				"\tRound: " + round + "\nAverage Forty Yard Dash: " + averageFortyYardDash;
 	}
+	
+	// A method we must have that has 5 default celebrations
+	
+	@Override
+	public String celebrate() {
+		// TODO Auto-generated method stub
+		return "";
+	}
+	
+	
+	
 }
 	
 	

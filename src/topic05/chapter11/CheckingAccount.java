@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class CheckingAccount extends Account{
 	
@@ -7,9 +7,12 @@ public class CheckingAccount extends Account{
 	
 	// no args constructor
 	public CheckingAccount(){
+		super();
+		overdraft = -50;
 	}
 	// Constructor
 	public CheckingAccount(int id, double balance, double overdraft){
+		super(id, balance);
 		this.overdraft = overdraft;
 	}
 	// Getter for overdraft 
@@ -25,9 +28,9 @@ public class CheckingAccount extends Account{
 		if (getBalance() - amount > overdraft)
 			setBalance(getBalance() - amount);
 		else 
-			System.out.println("Over withdraw limit");
+			System.out.println(" Over withdraw limit");
 	}
 	public String toString(){ 
-		return super.toString() + "Overdraft limit is $" + overdraft;
+		return super.toString() + " Overdraft limit is $" + overdraft;
 	}
 }

@@ -1,5 +1,7 @@
 package finalProject;
 
+import java.util.Random;
+
 public class DefensivePlayer extends NFLPlayers{
 	
 	private int tackles;
@@ -17,6 +19,15 @@ public class DefensivePlayer extends NFLPlayers{
 		this.tackles = tackles;
 		this.sacks = sacks;
 		this.interceptions = interceptions;
+	}
+	
+	// Celebrate method
+	public String celebrate(){
+		// Exclusive celebration
+		String [] celebrate = {" He then chest bumps all of his teammates!"};
+		int randomCelebrate = new Random().nextInt(Celebrator.celebrate.length);
+		String randomCelebration = (Celebrator.celebrate[randomCelebrate]);
+		return this.name + randomCelebration + celebrate;
 	}
 	
 	// Getters

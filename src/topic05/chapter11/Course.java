@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 import java.util.ArrayList;
 /*
 (The Course class) Rewrite the Course class in Listing 10.6. Use an ArrayList
@@ -17,7 +17,7 @@ public class Course {
 		student = new ArrayList<String>();
 	}
 	// I am not sure why it is not working
-	// I fallowed example 11.8
+	// I followed example 11.8
 	// Add a student to the list
 	public void addStudent(String student) {
 		student.add(student);

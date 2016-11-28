@@ -29,19 +29,20 @@ and interest rate and displays the amortization schedule for the loan.
 		// Table header
 		System.out.println("Payment\tInterest\tPrincipal\tBalance");
 		// Amortization schedule (circles and can't find solution)
-		for (int payment = 1; payment <= numberOfPayments; payment++){
+		/*for (int payment = 1; payment <= numberOfPayments; payment++){
 			double monthlyPrincipal;
 			double monthlyInterest = monthlyPayment - monthlyPrincipal;
 			if (payment == 1){
 				remainingPrincipal = loanAmount;	
 			}
 			else{
-				remainingPrincipal = principal - monthlyInterest;
+				remainingPrincipal = principal - remainingPrincipal;
 			}
 			monthlyInterest = monthlyInterestRate * remainingPrincipal;
 			// Display output
 			System.out.printf("%-13d%-13.2f%-13.2f%.2f\n", payment, monthlyInterest, principal, remainingPrincipal);
-		}
+		}*/
+		input.close();
 	}
 
 }

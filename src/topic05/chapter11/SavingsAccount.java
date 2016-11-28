@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class SavingsAccount extends Account{
 
@@ -6,9 +6,11 @@ public class SavingsAccount extends Account{
 	
 	// No args constructor
 	public SavingsAccount(){
+		super();
 	}
 	// Constructor
 	public SavingsAccount(int id, double balance){
+		super(id, balance);
 	}
 	// Getter for savings account balance
 	public double getSavingsBalance(){
@@ -27,6 +29,6 @@ public class SavingsAccount extends Account{
 		setBalance(getBalance() + amount);
 	}
 	public String toString(){
-		return super.toString() + "Savings: " + getSavingsBalance();
+		return super.toString() + " Savings: " + getSavingsBalance();
 	}
 }

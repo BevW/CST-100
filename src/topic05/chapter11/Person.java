@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class Person{
 	
@@ -7,6 +7,10 @@ public class Person{
 	private String phoneNumber;
 	private String emailAddress;
 	
+	// Default constructor
+	public Person(){
+		this ("unknown", "unknown", "unknown", "unknown");
+	}
 	// Was created as a quick fix from and error message
 	public Person(String name, String address, String phoneNumber, String emailAddress) {
 		// TODO Auto-generated constructor stub

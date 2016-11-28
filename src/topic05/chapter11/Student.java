@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class Student extends Person {
 
@@ -10,6 +10,10 @@ public class Student extends Person {
 	
 	// No args constructor
 	public Student(){
+		this("unknown", "unknown", "unknown", "unknown", 0);
+	}
+	public Student(String name, String address, String phoneNumber, String emailAddress){
+		super(name, address, phoneNumber,emailAddress);
 	}
 	// Create constructor
 	public Student(String name, String address, String phoneNumber, String emailAddress, int status){

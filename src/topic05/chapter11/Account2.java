@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -20,7 +20,7 @@ public class Account2{
 			dateCreated = new Date();
 			transactions = new ArrayList<Transactions>();
 		}
-		Account2(String name, int newId, double newBalance) {
+		Account2(String name, int id, double balance) {
 			this.name = "";
 			this.id = id;
 			this.balance = balance;

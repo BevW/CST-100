@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class Staff extends Employee {
 
@@ -8,7 +8,9 @@ public class Staff extends Employee {
 	public Staff(){
 	}
 	// Crate constructor
-	public Staff(String name, String address, String phoneNumber,String emailAddress, String title){
+	public Staff(String name, String address, String phoneNumber, String emailAddress,
+			int office, int dateHired, double salary, String title){
+		super(name, address, phoneNumber, emailAddress, office, dateHired, salary);
 		this.title = title;	
 	}
 	// Getter to get title

@@ -1,4 +1,4 @@
-package topic5.chapter11;
+package topic05.chapter11;
 
 public class E03 extends Account{
 /*
@@ -21,9 +21,9 @@ CheckingAccount and invokes their toString() methods.
 		
 		// Am not sure what is wrong
 		// Invoke toString() methods
-		System.out.println(Account.toString());
-		System.out.println(SavingsAccount.toString());
-		System.out.println(CheckingAccount.toString());
+		System.out.println(account.toString());
+		System.out.println(savings.toString());
+		System.out.println(checking.toString());
 	}
 
 }
