@@ -58,7 +58,7 @@ public class NFLPlayers implements Celebrator {
 		double dash1 = 0.0;
 		double dash2 = 0.0;
 		double dash3 = 0.0;
-		double average = (dash1 + dash2 +dash3) / 3;
+		double average = (dash1 + dash2 + dash3) / 3;
 		return average;
 	}
 	
