@@ -4,21 +4,40 @@ import java.util.Random;
 
 public class DefensivePlayer extends NFLPlayers{
 	
+	private int status;
 	private int tackles;
+	private int tacklesForLoss;
 	private int sacks;
 	private int interceptions;
-	private int status;
+	private int interceptionYards;
+	private int fumblesRecovered;
+	private int fumblesForced;
+	private int assists;
+	private int breakUps;
+	private int blockKicks;
+	private	int defensiveTouchDowns;
 	
 	// No args constructor
 	public DefensivePlayer(){
 	}
 	// Constructor
-	public DefensivePlayer(String name, String position, String highSchool, String college,
-			int age, int height, double weight, double grade, int round, double averageFortyYardDash, 
-			int tackles, int sacks, int interceptions){
+	public DefensivePlayer(String name, String position, String highschool, String college,
+			int age, int height, double weight, double grade, int round, double averageFortyYardDash,
+			int status, int tackles, int tacklesForLoss, int sacks, int interceptions, int interceptionYards,
+			int fumblesRecovered, int fumblesForced, int assists, int breakUps, int blockKicks, int defensiveTouchDowns){
+		super(name, position, highschool, college, age, height, weight, grade, round, averageFortyYardDash);
+		this.status = status;
 		this.tackles = tackles;
+		this.tacklesForLoss = tacklesForLoss;
 		this.sacks = sacks;
-		this.interceptions = interceptions;
+		this.interceptions =interceptions;
+		this.interceptionYards = interceptionYards;
+		this.fumblesRecovered = fumblesRecovered;
+		this.fumblesForced = fumblesForced;
+		this.assists = assists;
+		this.breakUps = breakUps;
+		this.blockKicks = blockKicks;
+		this.defensiveTouchDowns = defensiveTouchDowns;
 	}
 	
 	// Celebrate method
@@ -31,6 +50,30 @@ public class DefensivePlayer extends NFLPlayers{
 	}
 	
 	// Getters
+	public int getDefensiveTouchDowns(){
+		return defensiveTouchDowns;
+	}
+	public int getBlockKicks(){
+		return blockKicks;
+	}
+	public int getBreakUps(){
+		return breakUps;
+	}
+	public int getAssists(){
+		return assists;
+	}
+	public int getFumblesForced(){
+		return fumblesForced;
+	}
+	public int getFumblesRecovered(){
+		return fumblesRecovered;
+	}
+	public int getInterceptionYards(){
+		return interceptionYards;
+	}
+	public int getTacklesForLoss(){
+		return tacklesForLoss;
+	}
 	public int getTackles(){
 		return tackles;
 	}
@@ -51,6 +94,30 @@ public class DefensivePlayer extends NFLPlayers{
 	}
 	
 	// Setters
+	public void setDefensiveTouchDowns(int defensiveTouchDowns){
+		this.defensiveTouchDowns = defensiveTouchDowns;
+	}
+	public void setBlockKicks(int blockKicks){
+		this.blockKicks = blockKicks;
+	}
+	public void setBreakUps(int breakUps){
+		this.breakUps = breakUps;
+	}
+	public void setAssists(int assists){
+		this.assists = assists;
+	}
+	public void setFumblesForced(int fumblesForced){
+		this.fumblesForced = fumblesForced;
+	}
+	public void setFumblesRecoered(int fumblesRecovered){
+		this.fumblesRecovered = fumblesRecovered;
+	}
+	public void setInterceptionYards(int interceptionYards){
+		this.interceptionYards = interceptionYards;
+	}
+	public void setTacklesForLoss(int tacklesForLoss){
+		this.tacklesForLoss = tacklesForLoss;
+	}
 	public void setTackles(int tackles){
 		this.tackles = tackles;
 	}
@@ -66,7 +133,9 @@ public class DefensivePlayer extends NFLPlayers{
 	}
 	@Override
 	public String toString(){
-		return super.toString() + "\nTackles: " + tackles + "\tSacks: " + sacks +
-				"\nInterceptions: " + interceptions;
+		return super.toString() + String.format("\nStatus: \nTackles: \tTackesForLoss: \nSacks: \nInterceptions: \tInterception Yards: "
+				+ "\nFumbles Recovered: \tFumbles Forced: \nAssists: \tBreakups: \nBlock Kicks: \tDefensive Touchdowns: ",
+				status, tackles, tacklesForLoss, sacks, interceptions, interceptionYards,fumblesRecovered, fumblesForced, assists,
+				breakUps, blockKicks, defensiveTouchDowns);
 	}
 }

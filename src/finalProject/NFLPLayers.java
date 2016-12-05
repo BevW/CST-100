@@ -1,6 +1,6 @@
 package finalProject;
 
-public class NFLPlayers implements Celebrator {
+abstract class NFLPlayers implements Celebrator {
 
 	//name of player
 	String name;
@@ -23,6 +23,25 @@ public class NFLPlayers implements Celebrator {
 	//the average time of 3 attempts running a forty yard dash
 	double averageFortyYardDash;
 
+	// No args constructor/ Default
+	NFLPlayers(){
+		this("Unknown", "Unknown", "Unknown", "Unknown", 0, 0, 0.0, 0.0, 0, 0);
+	}
+	
+	// Constructor
+	NFLPlayers(String name, String position, String highschool, String college, int age,
+			int height, double weight, double grade, int round, double averageFortyYardDash){
+		this.name = name;
+		this.position = position;
+		this.highschool = highschool;
+		this.college = college;
+		this.age = age;
+		this.height = height;
+		this.weight = weight;
+		this.grade = grade;
+		this.round = round;
+		this.averageFortyYardDash = averageFortyYardDash;
+	}
 	//Getter for properties
 	public String getName(){
 		return name;
@@ -106,9 +125,4 @@ public class NFLPlayers implements Celebrator {
 		// TODO Auto-generated method stub
 		return "";
 	}
-	
-	
-	
 }
-	
-	
